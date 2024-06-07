@@ -1,0 +1,32 @@
+package haha;
+
+import java.io.IOException;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/hii")
+public class Hello extends HttpServlet{
+ @Override
+public void init(ServletConfig config) throws ServletException {
+	 super.init(config);
+	 System.out.println("hiiiii");
+	System.out.println("Inside init method");
+}
+ @Override
+	public void destroy() {
+System.out.println("Insude destroy method");		
+	}
+ @Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Inside the doGet method");
+	}
+ @Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	System.out.println("inside the doPost method");	
+	}
+}
