@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -49,12 +50,16 @@ public class CandidateServlet extends HttpServlet {
 				username=c.getValue();
 			}
 		}
+		out.printf("<h3>Hello, %s</h3>",username);
+		ServletContext cxt= this.getServletContext();
+		String msg=(String) cxt.getAttribute("anno");
+		//if(msg!=null)
+			//out.printf("Announcement : %s<br/><br/>\n",msg);
 		out.println("<form method='post' action='vote'>");
 		for (Candidate candi :candlist ) {
 			out.printf("<input type='radio' name='candidate' value='%d'/> %s (%s)<br/>\n",candi.getId(),candi.getName(),candi.getParty());
 			//System.out.println(candi.toString());
 		}
-		out.printf("Hello,%s",username);
 		out.println("<input type='submit' value='vote'/>");
 		out.println("</form>");
 		out.println("</body>");

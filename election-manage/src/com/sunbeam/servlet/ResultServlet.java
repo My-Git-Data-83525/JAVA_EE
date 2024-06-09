@@ -41,6 +41,7 @@ public class ResultServlet extends HttpServlet {
 		out.println("<title>Candidate Result</title>");
 		out.println("</head>");
 		out.println("<body>");
+		//out.println("<br/><a href='announcement.html'>announcement</a>");
 		out.println("<table border=1>");
 		out.println("<thead>");
 		out.println("<tr>");
@@ -63,6 +64,9 @@ public class ResultServlet extends HttpServlet {
 		}
 		out.printf("</tbody>");
 		out.printf("</table>");
+		String message=(String)req.getAttribute("message");
+		if(message!=null)
+		out.printf(message);
 		out.println("</body>");
 		out.println("</html>");
 	}

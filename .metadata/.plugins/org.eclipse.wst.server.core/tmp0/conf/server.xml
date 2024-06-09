@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\Lenovo\Desktop\JAVA-EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Lenovo\Desktop\JAVA-EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\haha" path="/haha" reloadable="true" source="org.eclipse.jst.jee.server:haha"/><Context docBase="C:\Users\Lenovo\Desktop\JAVA-EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hoho" path="/hoho" reloadable="true" source="org.eclipse.jst.jee.server:hoho"/></Host>
+      <Context docBase="C:\Users\Lenovo\Desktop\JAVA-EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Lenovo\Desktop\JAVA-EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\election-manage" path="/election-manage" reloadable="true" source="org.eclipse.jst.jee.server:election-manage"/><Context docBase="C:\Users\Lenovo\Desktop\JAVA-EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\haha" path="/haha" reloadable="true" source="org.eclipse.jst.jee.server:haha"/></Host>
     </Engine>
   </Service>
 </Server>

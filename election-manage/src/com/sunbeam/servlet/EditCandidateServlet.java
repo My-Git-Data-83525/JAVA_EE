@@ -2,7 +2,9 @@ package com.sunbeam.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.http.HttpClient.Redirect;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -44,5 +46,26 @@ public class EditCandidateServlet extends HttpServlet{
 		out.println("</form>");
 		out.println("</body>");
 		out.println("</html>");
+	}
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String Idtstr=req.getParameter("id");
+		int id=Integer.parseInt(Idtstr);
+		String name=req.getParameter("name");
+		String party=req.getParameter("party");
+		String votesstr=req.getParameter("votes");
+		int votes=Integer.parseInt(votesstr);
+		Candidate c=new Candidate(id, name, party, votes);
+		try(CandidateDao can=new CandidateDaoImpl()){
+			int cnt=can.update(c);
+			String message	="Candidate information is Updated : "+ cnt;
+			req.setAttribute("message",message);
+//			resp.sendRedirect("result");
+			RequestDispatcher rd =req.getRequestDispatcher("result");
+			rd.forward(req, resp);
+		}catch(Exception e) {
+			e.printStackTrace();
+			throw new ServletException();
+		}
 	}
 }

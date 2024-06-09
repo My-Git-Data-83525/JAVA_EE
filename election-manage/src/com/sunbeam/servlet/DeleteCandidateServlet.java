@@ -20,6 +20,8 @@ public class DeleteCandidateServlet extends HttpServlet {
 	int id=Integer.parseInt(idstr);
 	try(CandidateDao canDao=new CandidateDaoImpl()){
 		int count=canDao.deleteById(id);
+		String message="candidate deleted : "+ count;
+		req.setAttribute("message", message);
 		RequestDispatcher rd=req.getRequestDispatcher("result");
 		rd.forward(req, resp);
 	}catch(Exception e) {
