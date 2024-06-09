@@ -33,4 +33,23 @@
   <servlet-name>Vote</servlet-name>
   <url-pattern>/vote</url-pattern>
   </servlet-mapping>
+  <servlet>
+  <servlet-name>Registration</servlet-name>
+  <servlet-class>com.sunbeam.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Registration</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  <session-timeout>5</session-timeout>
+  <cookie-config><name>
+  SID
+  </name></cookie-config>
+  <tracking-mode>
+  COOKIE
+  </tracking-mode>
+  </session-config>
+  
 </web-app>

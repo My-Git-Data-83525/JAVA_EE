@@ -66,6 +66,23 @@ public class CandidateDaoImpl extends Dao implements CandidateDao {
 		} // stmt.close();
 		return list;
 	}
+	public Candidate findById(int id) throws Exception {
+		Candidate c = new Candidate();
+		String sql = "SELECT * FROM candidates WHERE id=?";
+		try(PreparedStatement stmt = con.prepareStatement(sql)) {
+			stmt.setInt(1, id);
+			try(ResultSet rs = stmt.executeQuery()) {
+				while(rs.next()) {
+					id = rs.getInt("id");
+					String name = rs.getString("name");
+					String party = rs.getString("party");
+					int votes = rs.getInt("votes");
+					c = new Candidate(id, name, party, votes);
+				}
+			} // rs.close();
+		} // stmt.close();
+		return c;
+	}
 	public int save(Candidate c) throws Exception {
 		String sql = "INSERT INTO candidates VALUES(default, ?, ?, ?)";
 		try(PreparedStatement stmt = con.prepareStatement(sql)) {

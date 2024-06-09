@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,7 +29,7 @@ public class CandidateServlet extends HttpServlet {
 		List<Candidate> candlist=new ArrayList<Candidate>();
 		try(CandidateDao candidateDao=new CandidateDaoImpl()){
 				candlist=candidateDao.findAll();
-		
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -41,11 +42,19 @@ public class CandidateServlet extends HttpServlet {
 		out.println("</head>");
 		out.println("<body>");
 		out.println("<h2>Online Voting</h2>");
+		String username="";
+		Cookie[] arr=req.getCookies();
+		for (Cookie c : arr) {
+			if(c.getName().equals("uname")) {
+				username=c.getValue();
+			}
+		}
 		out.println("<form method='post' action='vote'>");
 		for (Candidate candi :candlist ) {
 			out.printf("<input type='radio' name='candidate' value='%d'/> %s (%s)<br/>\n",candi.getId(),candi.getName(),candi.getParty());
-			System.out.println(candi.toString());
+			//System.out.println(candi.toString());
 		}
+		out.printf("Hello,%s",username);
 		out.println("<input type='submit' value='vote'/>");
 		out.println("</form>");
 		out.println("</body>");
