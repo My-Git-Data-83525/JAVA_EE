@@ -44,12 +44,10 @@
   
   <session-config>
   <session-timeout>5</session-timeout>
-  <cookie-config><name>
-  SID
-  </name></cookie-config>
-  <tracking-mode>
-  COOKIE
-  </tracking-mode>
+  <cookie-config>
+  <name>  SID  </name>
+  </cookie-config>
+  <tracking-mode>  COOKIE  </tracking-mode>
   </session-config>
   
 </web-app>
