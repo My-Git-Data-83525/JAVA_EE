@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="com.election.Dao.CandidateDao"/>
     <fullyQualifiedTypeName name="com.election.entity.Candidate"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
@@ -15,7 +14,6 @@
     <fullyQualifiedTypeName name="com.sunbeam.daos.UserDao"/>
     <fullyQualifiedTypeName name="com.sunbeam.daos.UserDaoImpl"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.sunbeam.pojos.Candidate"/>
     <fullyQualifiedTypeName name="com.sunbeam.daos.CandidateDao"/>
     <fullyQualifiedTypeName name="com.sunbeam.daos.CandidateDaoImpl"/>
@@ -36,18 +34,21 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.sunbeam.bean.User"/>
     <fullyQualifiedTypeName name="jspapp.CandidateDao"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="assignment2.utils.DbUtil"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="assignment2.pojo.Candidate"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="assignment2.pojo.Candidate"/>
     <fullyQualifiedTypeName name="assignment2.pojo.User"/>
     <fullyQualifiedTypeName name="assignment2.dao.CandidateDao"/>
     <fullyQualifiedTypeName name="assignment2.dao.CandidateDaoImpl"/>
+    <fullyQualifiedTypeName name="assignment2.beans.VoteBean"/>
     <fullyQualifiedTypeName name="assignment2.dao.UserDao"/>
     <fullyQualifiedTypeName name="assignment2.dao.UserDaoImpl"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

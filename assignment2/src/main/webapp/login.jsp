@@ -10,7 +10,7 @@
 <h2>Login</h2>
 <form method="post" action="Loginbean.jsp" >
 Email : <input type="text" name="email"/><br/><br/>
-Password :<input type="password" name="passwd"/><br/><br/>
+Password :<input type="password" name="password"/><br/><br/>
 <input type="submit" value="sign-in">
 <a href="?"></a>
 </form>

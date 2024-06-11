@@ -40,11 +40,11 @@ public class NewUserBeans {
 		this.role = "voter";
 	}
 
-	public User getU() {
+	public User getUser() {
 		return user;
 	}
 
-	public void setU(User u) {
+	public void setUser(User user) {
 		this.user = user;
 	}
 
@@ -92,8 +92,8 @@ public class NewUserBeans {
 		Date dateOfBirth = Date.valueOf(date);
 		System.out.println(dateOfBirth);
 		try (UserDao userDao = new UserDaoImpl()) {
-			user = new User(firstName, lastName, email, password, status, role);
-			num = userDao.save(user, dateOfBirth);
+			user = new User(firstName, lastName, email, password,dateOfBirth, status, role);
+			num = userDao.save(user);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

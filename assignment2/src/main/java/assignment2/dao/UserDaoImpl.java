@@ -53,14 +53,14 @@ public class UserDaoImpl extends Dao implements UserDao {
 		return null;
 	}
 	
-	public int save(User user,Date date) throws Exception {
+	public int save(User user) throws Exception {
 		String sql = "INSERT INTO users VALUES(default, ?, ?, ?, ?, ?, ?, ?)";
 		try(PreparedStatement stmt = con.prepareStatement(sql)) {
 			stmt.setString(1, user.getFirstName());
 			stmt.setString(2, user.getLastName());
 			stmt.setString(3, user.getEmail());
 			stmt.setString(4, user.getPassword());
-			stmt.setDate(5, date);
+			stmt.setDate(5, user.getBirth());
 			stmt.setInt(6, user.getStatus());
 			stmt.setString(7, user.getRole());
 			int cnt = stmt.executeUpdate();

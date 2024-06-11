@@ -12,7 +12,7 @@
 <jsp:setProperty name="ns" property="firstName" param="fname" />
 <jsp:setProperty name="ns" property="lastName" param="lname"/>
 <jsp:setProperty name="ns" property="email" param="email" />
-<jsp:setProperty name="ns" property="password" param="passwd"/>
+<jsp:setProperty name="ns" property="password" param="password"/>
 <jsp:setProperty name="ns" property="date" param="date"/>
 <% int n=ns.RegisterUser(); %>
 <% System.out.printf("%s",n); %>

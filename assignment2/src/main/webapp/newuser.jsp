@@ -12,7 +12,7 @@
 First Name: <input type="text" name="fname"/><br/><br/>
 Last Name: <input type="text" name="lname"/><br/><br/>
 Email: <input type="email" name="email"/><br/><br/>
-Password: <input type="password" name="passwd"/><br/><br/>
+Password: <input type="password" name="password"/><br/><br/>
 DOB: <input type="date" name="date"/><br/><br/>
 <input type="submit" name="Sign-Up"/><br/><br/>
 </form>

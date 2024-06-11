@@ -10,7 +10,7 @@ public interface UserDao extends AutoCloseable {
 
 	User findById(int id) throws Exception;
 
-	int save(User user,Date date) throws Exception;
+	int save(User user) throws Exception;
 
 	int updateStatus(int userId, boolean voted) throws Exception;
 
