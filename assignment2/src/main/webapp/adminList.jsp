@@ -16,6 +16,8 @@
 	<form method="post" action="Votebean.jsp">
 		<h1 style="text-align: center;">Online Voting</h1>
 		<div align="center">
+		<a href="announcement.jsp">Announcement</a>
+		<br/><br>
 			<table border="1" width="50%" style="text-align: center">
 				<thead>
 					<tr bgcolor="grey">
@@ -32,14 +34,14 @@
 							<td>${c.getId()}</td>
 							<td>${c.getName()}</td>
 							<td>${c.getParty()}</td>
-							<td><a href="Edit.jsp?id=${c.id}"><img height="24" width="24" src="Image/edit.jpeg"></a></td>
+							<td><a href="Edit.jsp?id=${c.id}"><img height="24" width="24"ter src="Image/edit.jpeg"></a><a href="delete.jsp?id=${c.id}"><img height="24" width="24"ter src="Image/delete.png"></a></td>
 						</tr>
 					</c:forEach>
 
 				</tbody>
 			</table>
 			<br />
-			<br /> <input type="submit" value="Vote" />
+			<br />
 		</div>
 	</form>
 </body>

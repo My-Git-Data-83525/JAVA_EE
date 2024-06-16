@@ -10,11 +10,10 @@
 </head>
 <body>
 
-	<jsp:useBean id="lb" class="assignment2.beans.LoginBean"
-		scope="session" />
+	<jsp:useBean id="lb" class="assignment2.beans.LoginBean" scope="session" />
 	<jsp:setProperty name="lb" property="*" />
 	${lb.Login()}
-	<c:choose>
+	<c:choose>	
 		<c:when test="${lb.user.role=='voter'}">
 			<c:redirect url="CandListbean.jsp" />
 		</c:when>
@@ -22,6 +21,7 @@
 			<c:redirect url="adminList.jsp" />
 		</c:when>
 		<c:otherwise>
+			<a href="newuser.jsp">Register Here</a>
 			Login failed!
 		</c:otherwise>
 	</c:choose>

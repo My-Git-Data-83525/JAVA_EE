@@ -12,6 +12,11 @@
 <jsp:setProperty property="candidateid" name="vb" param="candidate"/>
 <jsp:setProperty property="userid" name="vb" value="${lb.user.id}"/>
 Hello!, ${lb.user.email}
+<hr/>
+<br/>
+
+<hr/>
+
 <c:choose>
 <c:when test="${lb.user.status==0}">
 ${vb.checkVote()}

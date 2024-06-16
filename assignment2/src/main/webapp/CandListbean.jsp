@@ -12,10 +12,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
 	<jsp:useBean id="cl" class="assignment2.beans.CandlistBean" />
 	<form method="post" action="Votebean.jsp">
 		<h1 style="text-align: center;">Online Voting</h1>
-		<div align="center">
+		<div align="center">	
+		${ac.ann}
+		<c:choose >
+			<c:when test="${an.ann!=null}">
+				
+			</c:when>
+		</c:choose>
 			<table border="1" width="50%" style="text-align: center">
 				<thead>
 					<tr bgcolor="grey">
