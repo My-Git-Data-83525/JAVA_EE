@@ -9,10 +9,10 @@
 <body>
 	<jsp:useBean id="lb" class="com.sunbeam.beans.LoginBean" scope="session"/>
 	<jsp:setProperty name="lb" property="*"/>
-	${ lb.Login() }
+	${ lb.Login()}
 	<c:choose>
 		<c:when test="${lb.user!=null}">
-			${hiihiiohi }		
+					
 		</c:when>
 		<c:otherwise>
 			Hello, ${lb.email} <br/>

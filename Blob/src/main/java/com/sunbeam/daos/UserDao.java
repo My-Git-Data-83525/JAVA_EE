@@ -45,7 +45,7 @@ public class UserDao implements AutoCloseable {
             try(ResultSet rs = stmt.executeQuery()) {
                 if(rs.next()) {
                     int id = rs.getInt("id");
-                    String name = rs.getString("name");
+                    String name = rs.getString("full_name");
                     email = rs.getString("email");
                     String password = rs.getString("password");
                     String phone = rs.getString("phone");
