@@ -1,6 +1,5 @@
 package com.sunbeam.daos;
 import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import com.sunbeam.entities.Category;

@@ -63,9 +63,14 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\spring_boot_template_mvc"/>
+			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\spring_boot_mvc_blogs"/>
+			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\spring_mvc_product_hibernet"/>
+			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\spring_mvc_template"/>
+			<item value="C:\Users\Lenovo\Desktop\advjava\day12\day12-data\day12-data\code"/>
+			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\test_spring"/>
 			<item value="C:\Users\Lenovo\Desktop\advjava\day08\day8-data\day8-data\code\day8.1"/>
 			<item value="C:\Users\Lenovo\Desktop\advjava\day11\day11-data\day11-data\code\day11.1"/>
-			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\test_spring"/>
 			<item value="C:\Users\Lenovo\Desktop\JAVA-EE\web_maven_hibernate"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -7,8 +7,8 @@
 <title>Add product page</title>
 </head>
 <%-- data transfer fro m request params to JB --%>
-<jsp:setProperty property="*" name="product_bean"/>
 <body>
+<jsp:setProperty property="*" name="product_bean"/>
 <h5>${sessionScope.product_bean.addNewProduct()}</h5>
 </body>
 </html>

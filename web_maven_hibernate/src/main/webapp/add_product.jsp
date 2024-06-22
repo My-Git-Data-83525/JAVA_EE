@@ -7,28 +7,20 @@
 <title>Add New Product Form</title>
 </head>
 <body>
-	<form action="addProductProcess.jsp" method="post">
+	<form action="addCategoryProcess.jsp" method="post">
 		<table style="background-color: lightgrey; margin: auto">
 			<tr>
-				<td>Enter Product Name</td>
+				<td>Enter Category Name</td>
 				<td><input type="text" name="name" /></td>
 			</tr>
 			<tr>
-				<td>Enter Product Price</td>
-				<td><input type="number" name="price" /></td>
-			</tr>
-			<tr>
-				<td>Enter Product Quantity</td>
-				<td><input type="number" name="quantity" /></td>
-			</tr>
-			<tr>
-				<td>Enter Category ID</td>
-				<td><input type="number" name="categoryId" /></td>
+				<td>Enter Category description</td>
+				<td><input type="text" name="description" /></td>
 			</tr>
 
 			<tr>
-				<td><input type="submit" value="Add A Product" /></td>
-				</tr>
+				<td><input type="submit" value="Add A Category" /></td>
+			</tr>
 		</table>
 	</form>
 
